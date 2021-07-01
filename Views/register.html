@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+     
+    <link rel="preconnect" href="https://fonts.gstatic.com">   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">  
+    <title>Página de Mercado Libre</title>
+</head>
+<body>
+  <header>
+  <article class="header">
+    <div class="header__first-row">
+      <span class="header__first-row__logo">
+        <img src="public/images/logo-mercado-liebre.svg" alt="" width="320px">
+      </span>
+
+      <span class="container_search-bar">
+        <input type="text" placeholder="Buscar productos, marcas">
+        <button><i class="fas fa-search search"></i></button>
+      </span>
+      
+      <span class="header__copy">
+        <i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta
+        de crédito
+      </span>
+    </div>
+    
+        <nav class="nav">
+            <ul class="nav-bar__left header__second-row__list">
+               <li><a href="#">Ofertas</a></li>
+               <li><a href="#">Tiendas Oficiales</a></li>
+               <li><a href="#">Vender</a></li>
+               <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="nav-bar__right header__second-row__list">
+                <li><a href="/register.html">Crea tu cuenta</a><i class= "far fa-address-card"></i></li>
+                <li><a href="/login.html">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </nav>
+    
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+           </div>
+        </article>
+    
+    </header>
+    
+    <main class="register">
+      <article class="register-container">
+        <form action="/registro" method="GET">
+          <p class="personalinfo">
+              <label for="name">Nombre y apellido: </label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Ingrese el nombre"
+                id="name"
+                class= "Rec"
+              >
+          </p>
+          <p class="personalinfo">
+            <label for="nacimiento">Fecha de nacimiento: </label>
+            <input
+              type="date"
+              name="nacimiento"
+              placeholder="Fecha de nacimiento"
+              id="nacimiento"
+              class= "Rec"
+            ></p>
+            <p class="personalinfo">
+                <label for="domicilio">Domicilio: </label>
+                <input
+                  type="text"
+                  name="domicilio"
+                  placeholder="Ingrese su domicilio"
+                  id="domicilio"
+                  class= "Rec"
+                ></p>
+
+
+            <label>Perfil de usuario: </label>
+            <p>
+              <label>
+                  <input  type="radio" name="perfildeusuario">Combrador</label>
+              </label>
+
+              <label>
+                <input  type="radio" name="perfildeusuario">Vendedor</label>
+              </label>
+            </p>
+
+            <p>
+              <label>Seleccione las Categorías de su interés: </label>
+              <label><input
+                      type= "checkbox" name= "CategoriasDeInteres">Electro</label>
+                      <label><input
+                        type= "checkbox" name= "CategoriasDeInteres">Moda</label>       
+                        <label><input
+                            type= "checkbox" name= "CategoriasDeInteres">Hogar</label>
+                            <label><input
+                                type= "checkbox" name= "CategoriasDeInteres">Jugueteria</label>
+                                <label><input
+                                    type= "checkbox" name= "CategoriasDeInteres">Vida sana</label>
+            </p>
+
+            <p>
+               <label>Selecciona tu foto de perfil</label> 
+               <input type="file" name="img" accept= ".jpg" multiple placeholder="Foto">
+            </p>
+            
+            <p>
+                <label>Contraseña</label> 
+                <input type="password" name="contraseña" id= "contraseña" placeholder="Contraseña" class="Rec">
+             </p>
+            
+             <p>
+                <label for="RepetirContraseña"></label> Repite la contraseña: </label> 
+                <input type="RepetirContraseña" name="RepetirContraseña" id= "contraseña" placeholder="Contraseña" class="Rec">
+             </p>
+
+             <p>
+                 <button type="reset" class="button_de_registro">Borrar</button>
+                 <button type="submit" class="button_de_registro">Enviar</button>
+             </p>
+              
+            </article>
+        </main>
+    </form>
+  </body>
+</html>

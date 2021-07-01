@@ -1,0 +1,491 @@
+*{
+     font-family: 'Roboto', sans-serif;
+     padding: 0%;
+     margin: 0%;
+     box-sizing: border-box;
+}
+
+.header{
+   width: auto;
+   background-color: #EAC926;
+   box-sizing: border-box;
+   padding: 20px;
+}
+
+header {
+    padding: 0%;
+    width: auto;
+}
+
+body{
+    font-size: 12px;
+}
+
+
+footer{
+    width: 100vw;
+    padding: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+footer article{
+    line-height: 31px;
+    margin: auto;
+    padding: 1%;
+}
+
+footer article p {
+    line-height: 126%;
+    padding: 3%;
+}
+
+h3{
+    line-height: 5px;
+}
+ul li{                    
+    list-style-type: none;
+}
+
+main{
+    background-color: #e8e8e8; 
+    width: 90%;
+    padding: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+.catalog_1{
+    margin: 0%;
+    padding: 0%;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+
+.catalog_1 .description{
+    display: inline-block;;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 25%;
+}
+
+
+.catalog_2{
+    margin: 0%;
+    padding: 0%;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+
+.catalog_2 .description{
+    display: inline-block;;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 25%;
+}
+
+.Visita{
+    font-size: 24px;
+    font-weight: bold;
+    animation-name: encabezado;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/*##################################*/
+@keyframes encabezado{
+    0%{
+        font-size: 24px;
+        color: black;
+    }
+
+    100%{
+        font-size: 30px;
+        color: yellow;
+        opacity: .7;
+    }
+}
+
+/*##################################*/
+.item-price{
+    font-size: 18px;
+
+}
+
+.item-discount{
+    font-size: 16px;
+    color: green;
+}
+
+.item-name{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*Productos en venta*/
+.description{
+    margin-top: 15px;
+    margin-left: 3%;
+    margin-bottom: 15px;
+    margin-right: 1%;
+    width: 60%;
+    border: solid 6px rgba(202, 203, 204, .2);
+}
+
+
+.description:hover{
+    border: solid 6px rgba(255, 230, 0, 0.3);
+    transition: all .8s;
+}
+
+.description:hover .item-name{
+    display: inline-block;
+    transition: all 1s;
+}
+
+.info_del_producto{
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+.element__description {
+    line-height: 20px;
+    margin: auto;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+}
+
+.element__description .item-price{ 
+    display: inline-block;
+    align-items: right;
+    justify-content: center;
+    width: 30%;
+}
+
+.element__description  .item-discount { 
+    display: inline-block;
+    align-items: right;
+    justify-content: center;
+    width: 69%;
+}
+
+.element__description  .item-name { 
+    display: none;
+    }
+
+/*barra amarilla*/
+.header__first-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__first-row__logo{
+    display: flex;
+    box-sizing: border-box;
+    width: 33%;
+    padding: 3%;
+}
+
+.container_search-bar{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header__copy{
+    display: flex;
+    width: 33%;
+    text-align: left;
+    padding: 10px;
+}
+
+.nav{
+    font-weight: bold;
+    display: block;
+    justify-content: space-between;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav li{
+    display: flex;
+    margin: 0 10px;
+}
+
+
+.burger-menu{
+    width: 30px;
+    border-radius: 3px;
+    display: block;
+    margin-left: 47%;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    background-color: blue ;
+}
+
+/*Iconos*/
+/*Header*/
+/*main*/
+
+.fa-truck{     
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: -80%;
+    top: -25px;
+    color: green;
+
+}
+ .description:hover  .fa-truck{
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+     transform: rotate(-90deg);
+   }
+
+   /*footer*/ 
+.fa-credit-card{       
+    display: block;
+    font-size: 260%;
+    color: blue;
+    padding: 3%;
+}
+
+.fa-credit-card:hover{  
+    color: rgba(214, 195, 22, 0.918);
+}
+
+.fa-gift{              
+    display: block;
+    font-size: 260%;
+    color: blue;
+    padding: 3%;
+}
+
+.fa-gift:hover{
+    color: rgba(214, 195, 22, 0.918);
+}
+
+
+.fa-user-shield{               
+    display: block;
+    font-size: 260%;
+    color: blue;
+    padding: 3%;
+}
+
+.fa-user-shield:hover{
+    color: rgba(214, 195, 22, 0.918);
+}
+
+/*Version movil*/
+@media(max-width: 425px){
+    min-width: 361px;
+
+
+    .header__first-row{
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+    .catalog_1 .description{
+
+        width: 80%;
+    }
+    .catalog_2 .description{
+        width: 80%;
+    }
+    
+}
+/*Version tableta*/
+@media(min-width: 425px) and (max-width: 761px){
+    .burger-menu {
+        display: none;
+    }
+
+    .catalog_1 .description{
+        display: inline-block;;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 40%;
+    }
+    .catalog_2 .description{
+        display: inline-block;;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 40%;
+    }
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+/*Version desktop*/
+@media(min-width: 761px) {
+    .burger-menu {
+        display: none;
+    }
+
+
+    .catalog_1 .description{
+        display: inline-block;;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 20%;
+    }
+    .catalog_2 .description{
+        display: inline-block;;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 20%;
+    }
+
+    footer {
+        width: 100vw;
+        padding: 0%;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0%;
+        display: flex;
+    }
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ }
+
+ /*Register*/
+ .register{
+    background-color: #e8e8e8;
+    padding: 6% 30% 60% 30%;
+    width: auto;
+    text-align: center;
+    height: 1024px;
+}
+
+.register-container{
+    margin: auto;
+    width: 100%;
+    background-color: #b8b8b8;
+    padding: 6%;
+    display: block;
+    color: black;
+    text-align: left;
+}
+
+.personalinfo{
+    margin-bottom: 10px;
+
+}
+
+.Rec{
+    width: 96%;
+    padding: 2px;
+    border-radius: 6px;
+    border: none;
+}
+
+.button_de_registro{
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    color: gray;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    width: 84px;
+} 
+
+.button_de_registro:hover{
+    color: white;
+    background-color: blue;
+    transition: all .3s;
+} 
+
+.register label{
+    margin-bottom: 10px;
+    font-style: italic;
+    display: block;
+}
+/*login*/
+
+.login{
+    background-color: #e8e8e8;
+    padding: 6% 30% 60% 30%;
+    width: auto;
+    text-align: center;
+    height: 1024px;
+}
+
+.logincontainer{
+    margin: auto;
+    width: 100%;
+    background-color: #b8b8b8;
+    padding: 6%;
+    display: block;
+    color: black;
+    text-align: left;
+}
+
+.recuadro_log{
+    margin-bottom: 10px;
+}
+
+.Rec{
+    width: 96%;
+    padding: 2px;
+    border-radius: 6px;
+    border: none;
+}
+
+.submitlogin{
+    border-radius: 6px;
+    border: none;
+    font-size: 10px;
+    margin-top: 34px;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-color: blue;
+} 
+
+.submitlogin:hover{
+    color: white;
+    background-color: #529dff;
+    transition: all .3s;
+}
+
+
+.login label{
+    margin-bottom: 10px;
+    font-style: italic;
+    display: block;
+    
+}
+
+
+
+
