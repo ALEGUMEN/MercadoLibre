@@ -18,7 +18,7 @@ header {
 }
 
 body{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
@@ -31,27 +31,25 @@ footer{
 }
 
 footer article{
-    line-height: 31px;
+    line-height: 50px;
     margin: auto;
-    padding: 1%;
+    padding: 0%;
 }
 
 footer article p {
-    line-height: 126%;
+    line-height: 130%;
     padding: 3%;
 }
 
 h3{
     line-height: 5px;
 }
-ul li{                    
-    list-style-type: none;
-}
+
 
 main{
     background-color: #e8e8e8; 
-    width: 90%;
-    padding: 0%;
+    width: 100vw;
+    padding: 5%;
     text-align: center;
     box-sizing: border-box;
     margin: 0%;
@@ -66,7 +64,7 @@ main{
 }
 
 .catalog_1 .description{
-    display: inline-block;;
+    display: block;
     justify-content: space-between;
     align-items: stretch;
     width: 25%;
@@ -82,7 +80,7 @@ main{
 }
 
 .catalog_2 .description{
-    display: inline-block;;
+    display: inline-block;
     justify-content: space-between;
     align-items: stretch;
     width: 25%;
@@ -90,16 +88,14 @@ main{
 
 .Visita{
     font-size: 24px;
-    font-weight: bold;
     animation-name: encabezado;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 /*##################################*/
 @keyframes encabezado{
     0%{
-        font-size: 24px;
+        font-size: 50px;
         color: black;
     }
 
@@ -113,7 +109,6 @@ main{
 /*##################################*/
 .item-price{
     font-size: 18px;
-
 }
 
 .item-discount{
@@ -197,7 +192,7 @@ main{
 }
 
 .container_search-bar{
-    width: 33%;
+    width: 53%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -227,16 +222,6 @@ main{
 }
 
 
-.burger-menu{
-    width: 30px;
-    border-radius: 3px;
-    display: block;
-    margin-left: 47%;
-    color:white;
-    font-size: 20px;
-    text-align: center;
-    background-color: blue ;
-}
 
 /*Iconos*/
 /*Header*/
@@ -326,10 +311,7 @@ main{
 }
 /*Version tableta*/
 @media(min-width: 425px) and (max-width: 761px){
-    .burger-menu {
-        display: none;
-    }
-
+    
     .catalog_1 .description{
         display: inline-block;;
         justify-content: space-between;
@@ -337,7 +319,7 @@ main{
         width: 40%;
     }
     .catalog_2 .description{
-        display: inline-block;;
+        display: inline-block;
         justify-content: space-between;
         align-items: stretch;
         width: 40%;
@@ -347,19 +329,15 @@ main{
 
 /*Version desktop*/
 @media(min-width: 761px) {
-    .burger-menu {
-        display: none;
-    }
-
 
     .catalog_1 .description{
-        display: inline-block;;
+        display: inline-block;
         justify-content: space-between;
         align-items: stretch;
         width: 20%;
     }
     .catalog_2 .description{
-        display: inline-block;;
+        display: inline-block;
         justify-content: space-between;
         align-items: stretch;
         width: 20%;
@@ -401,10 +379,9 @@ main{
 }
 
 .Rec{
-    width: 96%;
+    width: 100%;
     padding: 2px;
     border-radius: 6px;
-    border: none;
 }
 
 .button_de_registro{
@@ -415,7 +392,7 @@ main{
     margin-top: 10px;
     margin-left: 10px;
     padding: 5px;
-    width: 84px;
+    width: 100px;
 } 
 
 .button_de_registro:hover{
@@ -426,14 +403,12 @@ main{
 
 .register label{
     margin-bottom: 10px;
-    font-style: italic;
     display: block;
 }
 /*login*/
 
 .login{
     background-color: #e8e8e8;
-    padding: 6% 30% 60% 30%;
     width: auto;
     text-align: center;
     height: 1024px;
@@ -454,36 +429,33 @@ main{
 }
 
 .Rec{
-    width: 96%;
-    padding: 2px;
+    width: 100%;
+    padding: 12px;
     border-radius: 6px;
     border: none;
 }
 
+
+
 .submitlogin{
     border-radius: 6px;
-    border: none;
-    font-size: 10px;
-    margin-top: 34px;
-    padding: 8px;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 12px;
     width: 100%;
     text-align: center;
     color: black;
-    background-color: blue;
+    background-color: white;
 } 
 
 .submitlogin:hover{
     color: white;
-    background-color: #529dff;
+    background-color: rgba(214, 195, 22, 0.918);
     transition: all .3s;
 }
 
-
 .login label{
-    margin-bottom: 10px;
-    font-style: italic;
     display: block;
-    
 }
 
 
