@@ -1,5 +1,4 @@
-let express = require('express');
-const { Http2ServerRequest } = require('http2');
+const express = require('express');
 const  app = express();
 const path = require("path");   
 
@@ -14,17 +13,17 @@ app.listen(process.env.PORT || 3000, function() {
 
 
 app.get("/", function(req,res){
-    let htmlArchivo = path.resolve(__dirname, './views/home.html')
+    let htmlArchivo = path.resolve(__dirname, './Views/home.html')
     res.sendFile(htmlArchivo);
 })
 
 app.get("/register", function(req,res){
-    let htmlArchivo = path.resolve(__dirname, './views/register.html')
+    let htmlArchivo = path.resolve(__dirname, './Views/register.html')
     res.sendFile(htmlArchivo);
 })
 
 app.get("/login", function(req,res){
-    let htmlArchivo = path.resolve(__dirname, './views/login.html')
+    let htmlArchivo = path.resolve(__dirname, './Views/login.html')
     res.sendFile(htmlArchivo);
 })
 
